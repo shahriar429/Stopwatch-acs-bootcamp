@@ -1,0 +1,89 @@
+body {
+  background-color: black; 
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  text-align: center;
+  width: 100%;
+  max-width: 420px; 
+  padding: 25px;
+}
+
+.stopwatch-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #1b691e;
+  padding: 12px 30px;
+  border-radius: 15px;
+  background-color: #0a0a0a;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px; 
+}
+
+.stopwatch-display p {
+  font-size: 48px;
+  font-weight: bold;
+  color: rgb(255, 0, 43); 
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+button {
+  background-color: #4CAF50; 
+  color: white;
+  padding: 12px 25px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+  flex-grow: 1;
+  max-width: 150px;
+}
+
+button:hover {
+  background-color: #327435;
+}
+
+button.reset {
+  background-color: #2196F3;
+}
+
+button.reset:hover {
+  background-color: #185fa5;
+}
+
+button.pause {
+  background-color: #FF9800; 
+}
+
+button.pause:hover {
+  background-color: #c97a19;
+}
+
+button:disabled {
+  background-color: #D3D3D3; 
+  cursor: not-allowed;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: bold;
+  color: white; 
+  margin-bottom: 40px;
+}
